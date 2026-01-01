@@ -36,7 +36,7 @@ if st.button("🔍 Recommend"):
         for _, row in results.iterrows():
             st.markdown(f"### 🎥 {row['title']}")
             st.markdown(f"**Description:** {row['description']}")
-            st.markdown(f"💡 *{row['explanation']}*")
+            st.markdown("---")
             st.divider()
 
 # Footer
