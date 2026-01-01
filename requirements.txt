@@ -3,4 +3,6 @@ pandas
 numpy
 scikit-learn
 sentence-transformers
-tensorflow
+torch
+transformers
+tf-keras
