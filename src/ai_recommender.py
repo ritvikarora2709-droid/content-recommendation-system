@@ -64,9 +64,9 @@ def recommend(user_query, top_n=3):
     top_indices = np.argsort(similarities)[::-1][:top_n]
 
     results = df.iloc[top_indices][["title", "description"]].copy()
-    results["explanation"] = results["description"].apply(
-        lambda x: explain_recommendation(query, x)
-    )
+    #results["explanation"] = results["description"].apply(
+    #    lambda x: explain_recommendation(query, x)
+    #)
     return results
 
 if __name__ == "__main__":
